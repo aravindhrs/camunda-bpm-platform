@@ -184,7 +184,7 @@ public class IdentityServiceTest {
       if (!(ex instanceof BadUserRequestException)) {
         fail("BadUserRequestException is expected, but another exception was received:  " + ex);
       }
-      assertEquals("Could not create an user because it already exists", ex.getMessage());
+      assertEquals("The user already exists", ex.getMessage());
     }
   }
 

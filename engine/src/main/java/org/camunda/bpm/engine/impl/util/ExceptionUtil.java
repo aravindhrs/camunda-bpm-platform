@@ -93,7 +93,7 @@ public class ExceptionUtil {
         || ex.getMessage().contains("violat")
         || ex.getMessage().contains("duplicate")
         || ex.getMessage().contains("ORA-00001")
-        || ex.getMessage().contains("SQLCODE=-803")) {
+        || ex.getMessage().contains("SQLCODE=-803, SQLSTATE=23505")) {
         return true;
       }
     }
